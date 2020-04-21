@@ -11,7 +11,7 @@ spring:
   data:
     cassandra:
       cluster-name: My Cluster
-      contact-points: 35.244.42.148
+      contact-points: 35.244.42.148,34.93.185.173
       keyspace-name: show_time
       port: 9042
       schema-action: CREATE_IF_NOT_EXISTS
