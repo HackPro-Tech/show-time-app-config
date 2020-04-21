@@ -1,0 +1,11 @@
+
+
+# User Service
+-Dspring-boot.run.arguments="--cloud.config-uri=http://localhost:8888 --cassandra.contact-points=35.244.42.148"
+
+
+# Auth Service
+-Dspring-boot.run.arguments="--cloud.config-uri=http://localhost:8888 --cassandra.contact-points=35.244.42.148"
+
+# Config Server
+-Dspring-boot.run.arguments="--cloud.config-git.repo.uri=https://github.com/HackPro-Tech/show-time-app-config"
