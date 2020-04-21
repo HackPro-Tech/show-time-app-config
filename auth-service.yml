@@ -1,0 +1,48 @@
+#Server Port
+server:
+  port: 8989
+  
+#Cassandra DB
+---
+spring:
+  data:
+    cassandra:
+      cluster-name: My Cluster
+      contact-points: ${cassandra.contact-points}
+      keyspace-name: vault
+      port: 9042
+      schema-action: CREATE_IF_NOT_EXISTS
+      consistency-level: ONE
+      connect-timeout: 10000ms
+      read-timeout: 10000ms
+      pool:
+        pool-timeout: 10000ms
+  main:
+    allow-bean-definition-overriding: true
+
+# Application Business Properties
+records:
+  max-limit: 100
+  initial-count: 20
+  page-no: 0
+
+# Logging
+logging:
+  level:
+    com:
+      showtime:
+        authserver: INFO
+    # org.springframework: debug
+    # org.springframework.security: error
+
+
+# Feign Client
+feign:
+  client:
+    config:
+      feignName:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: full
+  hystrix:
+    enabled: true

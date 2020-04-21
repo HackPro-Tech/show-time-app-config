@@ -1,10 +1,17 @@
+#Server Port
+server:
+  servlet:
+    context-path: /user
+  port: 8100
+
+
 #Cassandra DB
 ---
 spring:
   data:
     cassandra:
       cluster-name: My Cluster
-      contact-points: 35.244.42.148
+      contact-points: ${cassandra.contact-points}
       keyspace-name: show_time
       port: 9042
       schema-action: CREATE_IF_NOT_EXISTS
@@ -13,13 +20,6 @@ spring:
       read-timeout: 10000ms
       pool:
         pool-timeout: 10000ms
-
-#Server Port
-server:
-  servlet:
-    context-path: /user
-  port: 8100
-
 
 # Logging
 logging:
