@@ -8,7 +8,7 @@ spring:
   data:
     cassandra:
       cluster-name: My Cluster
-      contact-points: 35.244.42.148,34.93.185.173
+      contact-points: 35.244.42.148,34.93.185.173,35.202.11.242
       keyspace-name: vault
       port: 9042
       schema-action: CREATE_IF_NOT_EXISTS
