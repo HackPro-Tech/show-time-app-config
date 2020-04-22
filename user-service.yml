@@ -1,7 +1,5 @@
 #Server Port
 server:
-  servlet:
-    context-path: /user
   port: 8100
 
 
