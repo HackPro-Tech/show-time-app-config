@@ -24,7 +24,7 @@ logging:
   level:
     com:
       showtime:
-        userservice: INFO
+        userservice: DEBUG
 
 
 #Cloud Config Server 
