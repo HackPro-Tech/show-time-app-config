@@ -9,3 +9,5 @@
 
 # Config Server
 -Dspring-boot.run.arguments="--cloud.config-git.repo.uri=https://github.com/HackPro-Tech/show-time-app-config"
+
+
