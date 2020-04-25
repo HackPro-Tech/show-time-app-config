@@ -1,14 +1,14 @@
 #Server Port
 server:
   port: 8989
-  
+
 #Cassandra DB
 ---
 spring:
   data:
     cassandra:
       cluster-name: My Cluster
-      contact-points: 35.223.150.209,35.224.1.160
+      contact-points: 35.223.150.209,35.224.1.160,35.224.245.17
       keyspace-name: vault
       port: 9042
       schema-action: CREATE_IF_NOT_EXISTS
@@ -48,8 +48,13 @@ feign:
     enabled: true
 
 #Cloud Config Server 
---- 
-spring:   
-   cloud:
-    config: 
-      uri: http://localhost:8888     
+---
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+
+# Kafka Config
+kafka:
+  bootstrap-servers: 35.224.245.17
+  topic-name: register_new_user
