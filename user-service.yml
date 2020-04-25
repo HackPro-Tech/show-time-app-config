@@ -34,3 +34,8 @@ spring:
     config: 
       uri: http://localhost:8888   
 
+
+# Kafka Config
+kafka:
+  bootstrap-servers: 35.224.245.17
+  topic-name: register_new_user
