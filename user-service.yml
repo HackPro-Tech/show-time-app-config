@@ -32,6 +32,13 @@ logging:
 spring:
   cloud:
     config:
-      uri: http://localhost:8888   
+      uri: http://localhost:8888
+
+# Kafka Config
+kafka:
+  bootstrap-servers: 35.193.55.3:9092
+  topic-name: register_new_user#
+  group-id: registration_application
+  offset-option: earliest
 
 
