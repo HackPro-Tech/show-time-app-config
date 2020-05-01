@@ -61,4 +61,4 @@ spring:
 # Kafka Config
 kafka:
   bootstrap-servers: 35.193.55.3:9092
-  topic-name: register_new_user
+  topic-name: register_user_topic
