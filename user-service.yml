@@ -39,6 +39,6 @@ kafka:
   bootstrap-servers: 35.193.55.3:9092
   topic-name: register_user_topic
   group-id: registration_application
-  offset-option: earliest
+  offset-option: latest
 
 
