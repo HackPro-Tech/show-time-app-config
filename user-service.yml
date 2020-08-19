@@ -35,10 +35,10 @@ spring:
       uri: http://localhost:8888
 
 # Kafka Config
-kafka:
-  bootstrap-servers: 35.193.55.3:9092
-  topic-name: register_user_topic
-  group-id: registration_application
-  offset-option: latest
-
+#kafka:
+#  bootstrap-servers: 35.193.55.3:9092
+#  topic-name: register_user_topic
+#  group-id: registration_application
+#  offset-option: latest
+#
 
