@@ -25,6 +25,8 @@ logging:
     com:
       showtime:
         userservice: DEBUG
+    org:
+      springframework: DEBUG
 
 
 #Cloud Config Server 
